@@ -1,4 +1,5 @@
 @extends('layouts.admin.app')
+<<<<<<< HEAD
 
 @section('content')
     <div class="py-4">
@@ -25,6 +26,10 @@
             </div>
         </div>
     </div>
+=======
+    @section('content')
+    {{-- start main content --}}
+>>>>>>> 5b3c3bf (CRUD)
 
     @if (session('success'))
         <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -66,10 +71,49 @@
                                     <input type="text" id="first_name" name="first_name" class="form-control" value="{{ old('first_name', $dataPelanggan->first_name) }}" required>
                                 </div>
 
+<<<<<<< HEAD
                                 <!-- Last Name -->
                                 <div class="mb-3">
                                     <label for="last_name" class="form-label">Last name</label>
                                     <input type="text" id="last_name" name="last_name" class="form-control" value="{{ old('last_name', $dataPelanggan->last_name) }}" required>
+=======
+                                <div class="col-lg-4 col-sm-6">
+                                    <!-- Birthday -->
+                                    <div class="mb-3">
+                                        <label for="birthday" class="form-label">Birthday</label>
+                                        <input type="date" id="birthday" name="birthday"class="form-control"require value="{{ $dataPelanggan->last_name }}">
+                                    </div>
+
+                                    <!-- Gender -->
+                                    <div class="mb-3">
+                                        <label for="gender" class="form-label">Gender</label>
+                                        <select id="gender" name="gender" class="form-select">
+                                            <option value="">-- Pilih --</option>
+                                            <option value="Male" {{$dataPelanggan->gender == 'Male' ?  'selected' :''}}>Male</option>
+                                            <option value="Female" {{$dataPelanggan->gender == 'Female' ?  'selected' :''}}>Female</option>
+                                            <option value="Other" {{$dataPelanggan->gender == 'Other' ?  'selected' :''}}>Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-12">
+                                    <!-- Email -->
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="text" id="email" class="form-control"name="email" required value="{{ $dataPelanggan->email }}">
+                                    </div>
+                                    <!-- Phone -->
+                                    <div class="mb-3">
+                                        <label for="telephon" class="form-label">telephon</label>
+                                        <input type="text" id="telephon" name="telephon"form-control" required value="{{ $dataPelanggan->phone }}">
+                                    </div>
+                                    <!-- Buttons -->
+                                    <div class="">
+                                        <button type="submit" class="btn btn-primary">Simpan</button>
+                                        <a href="/pelanggan" class="btn btn-outline-secondary ms-2">Batal</a>
+<!-- ATAU jika menggunakan nama route: -->
+<a href="{{ route('pelanggan.index') }}" class="btn btn-outline-secondary ms-2">Batal</a>
+                                    </div>
+>>>>>>> 5b3c3bf (CRUD)
                                 </div>
                             </div>
 
@@ -116,5 +160,13 @@
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
     </div>
 @endsection
+=======
+         <!-- end main content  -->
+
+
+@endsection
+       
+>>>>>>> 5b3c3bf (CRUD)

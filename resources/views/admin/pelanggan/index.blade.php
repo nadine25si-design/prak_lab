@@ -80,5 +80,11 @@
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
     </div>
+=======
+         <!-- end main content  -->
+
+
+>>>>>>> 5b3c3bf (CRUD)
 @endsection
