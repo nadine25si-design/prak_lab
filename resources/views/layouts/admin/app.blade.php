@@ -36,6 +36,7 @@ The above copyright notice and this permission notice shall be included in all c
     @include('layouts.admin.sidebar')
     {{-- end sidebar --}}
     <main class="content">
+<<<<<<< HEAD
         {{-- start header --}}
         @include('layouts.admin.header')
         {{-- end header --}}
@@ -44,6 +45,14 @@ The above copyright notice and this permission notice shall be included in all c
         @yield('content')
         {{-- end main content --}}
 
+=======
+    {{-- start header --}}
+    @include('layouts.admin.header')
+    {{-- end header --}}
+    {{-- start main content --}}
+    @yield('content')
+    {{-- end main content --}}
+>>>>>>> aa98d7b (pratikum 10)
         {{-- start footer --}}
         @include('layouts.admin.footer')
         {{-- end footer --}}
